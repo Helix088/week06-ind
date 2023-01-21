@@ -1,0 +1,181 @@
+[
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05a"
+    },
+        "name":"Bulbasaur",
+        "number":"1",
+        "type":["Grass", "Poison"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/bulbasaur.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+        "height":"0.7 m (2′04″)",
+        "weight":"6.9 kg (15.2 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05b"
+    },
+        "name":"Ivysaur",
+        "number":"2",
+        "type":["Grass", "Poison"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/ivysaur.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+        "height":"1.0 m (3′03″)",
+        "weight":"13.0 kg (28.7 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05c"
+    },
+        "name":"Venusaur",
+        "number":"3",
+        "type":["Grass", "Poison"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/venusaur.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png",
+        "height":"2.0 m (6′07″)",
+        "weight":"100.0 kg (220.5 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05d"
+    },
+        "name":"Charmander",
+        "number":"4",
+        "type":"Fire",
+        "image":"https://img.pokemondb.net/artwork/vector/large/charmander.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png",
+        "height":"0.6 m (2′00″)",
+        "weight":"8.5 kg (18.7 lbs)"
+    },{
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05e"
+    },
+        "name":"Charmeleon",
+        "number":"5",
+        "type":"Fire",
+        "image":"https://img.pokemondb.net/artwork/vector/large/charmeleon.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/5.png",
+        "height":"1.1 m (3′07″)",
+        "weight":"19.0 kg (41.9 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05f"
+    },
+        "name":"Charizard",
+        "number":"6",
+        "type":["Fire", "Flying"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/charizard.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png",
+        "height":"1.7 m (5′07″)",
+        "weight":"90.5 kg (199.5 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05g"
+    },
+        "name":"Squirtle",
+        "number":"7",
+        "type":"Water",
+        "image":"https://img.pokemondb.net/artwork/vector/large/squirtle.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png",
+        "height":"0.5 m (1′08″)",
+        "weight":"9.0 kg (19.8 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05h"
+    },
+        "name":"Wartortle",
+        "number":"8",
+        "type":"Water",
+        "image":"https://img.pokemondb.net/artwork/vector/large/wartortle.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png",
+        "height":"1.0 m (3′03″)",
+        "weight":"22.5 kg (49.6 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05i"
+    },
+        "name":"Blatoise",
+        "number":"9",
+        "type":"Water",
+        "image":"https://img.pokemondb.net/artwork/vector/large/blastoise.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png",
+        "height":"1.6 m (5′03″)",
+        "weight":"85.5 kg (188.5 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05j"
+    },
+        "name":"Caterpie",
+        "number":"10",
+        "type":"Bug",
+        "image":"https://img.pokemondb.net/artwork/vector/large/caterpie.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10.png",
+        "height":"0.3 m (1′00″)",
+        "weight":"2.9 kg (6.4 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05k"
+    },
+        "name":"Metapod",
+        "number":"11",
+        "type":"Bug",
+        "image":"https://img.pokemondb.net/artwork/vector/large/metapod.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/11.png",
+        "height":"0.7 m (2′04″)",
+        "weight":"9.9 kg (21.8 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05l"
+    },
+        "name":"Butterfree",
+        "number":"12",
+        "type":["Bug", "Flying"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/butterfree.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/12.png",
+        "height":"1.1 m (3′07″)",
+        "weight":"32.0 kg (70.5 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05m"
+    },
+        "name":"Weedle",
+        "number":"13",
+        "type":["Bug", "Poison"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/weedle.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/13.png",
+        "height":"0.3 m (1′00″)",
+        "weight":"3.2 kg (7.1 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05n"
+    },
+        "name":"Kakuna",
+        "number":"14",
+        "type":["Bug", "Poison"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/kakuna.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/14.png",
+        "height":"0.6 m (2′00″)",
+        "weight":"10.0 kg (22.0 lbs)"
+    },
+    {
+        "_id": {
+        "$oid": "63ba2c1898a0c4386448e05o"
+    },
+        "name":"Beedrill",
+        "number":"15",
+        "type":["Bug", "Poison"],
+        "image":"https://img.pokemondb.net/artwork/vector/large/beedrill.png",
+        "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/15.png",
+        "height":"1.0 m (3′03″)",
+        "weight":"29.5 kg (65.0 lbs)"
+    }
+]
