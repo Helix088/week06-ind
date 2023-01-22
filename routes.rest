@@ -18,8 +18,8 @@ content-type: application/json
 
 {
     "name":"Squirtle",
-    "number":"7",
-    "type":"Water",
+    "number":7,
+    "type":["Water"],
     "image":"https://img.pokemondb.net/artwork/vector/large/squirtle.png",
     "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png",
     "height":"0.5 m (1′08″)",
@@ -32,11 +32,11 @@ content-type: application/json
 
 {
     "name":"Wartortle",
-    "number":"8",
-    "type":"Water",
+    "number":8,
+    "type":["Water"],
     "image":"https://img.pokemondb.net/artwork/vector/large/wartortle.png",
     "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png",
-    "height":"1.0 m (3′03″)",
+    "height":"1.0 m (3ft 03in)",
     "weight":"22.5 kg (49.6 lbs)"
 }
 
@@ -46,7 +46,7 @@ content-type: application/json
 
 {
     "name":"Bulbasaur",
-    "number":"1",
+    "number":1,
     "type":["Grass", "Poison"],
     "image":"https://img.pokemondb.net/artwork/large/bulbasaur.jpg",
     "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/1.png",
@@ -60,7 +60,7 @@ content-type: application/json
 
 {
     "name":"Charmander",
-    "number":"4",
+    "number":4,
     "type":["Fire"],
     "image":"https://img.pokemondb.net/artwork/large/charmander.jpg",
     "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/4.png",

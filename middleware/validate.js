@@ -4,7 +4,7 @@ const savePokemon = (req, res, next) => {
   const validationRule = {
     name: "required|string",
     number: "required|integer",
-    type: "required|string|array",
+    type: "required|array",
     image: "required|string",
     shiny: "required|string",
     height: "required|string",
