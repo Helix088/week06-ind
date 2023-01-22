@@ -17,9 +17,9 @@ const getPokeData = (req, res) => {
 };
 
 const getPokemon = (req, res) => {
-  if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid Pokemon id to find Pokemon.')
-  }
+  // if (!ObjectId.isValid(req.params.id)) {
+  //   res.status(400).json("Must use a valid Pokemon id to find Pokemon.");
+  // }
   const userId = new ObjectId(req.params.id);
   mongodb
     .getDb()
@@ -35,7 +35,7 @@ const getPokemon = (req, res) => {
     });
 };
 
-const createPokemon = (req, res) => {
+const createPokemon = async (req, res) => {
   const pokemon = {
     name: req.body.name,
     number: req.body.number,
@@ -43,9 +43,9 @@ const createPokemon = (req, res) => {
     image: req.body.image,
     shiny: req.body.shiny,
     height: req.body.height,
-    weight: req.body.weight
+    weight: req.body.weight,
   };
-  const response = mongodb
+  const response = await mongodb
     .getDb()
     .db("poke-data")
     .collection("pokemon")
@@ -56,15 +56,15 @@ const createPokemon = (req, res) => {
     res
       .status(500)
       .json(
-        response.error || "An error has occurred while creating the pokemon."
+        response.error || "Some error occurred while creating the contact."
       );
   }
 };
 
-const updatePokemon = (req, res) => {
-  if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid Pokemon id to update Pokemon.')
-  }
+const updatePokemon = async (req, res) => {
+  // if (!ObjectId.isValid(req.params.id)) {
+  //   res.status(400).json("Must use a valid Pokemon id to update Pokemon.");
+  // }
   const userId = new ObjectId(req.params.id);
   const pokemon = {
     name: req.body.name,
@@ -73,9 +73,9 @@ const updatePokemon = (req, res) => {
     image: req.body.image,
     shiny: req.body.shiny,
     height: req.body.height,
-    weight: req.body.weight
+    weight: req.body.weight,
   };
-  const response = mongodb
+  const response = await mongodb
     .getDb()
     .db("poke-data")
     .collection("pokemon")
@@ -87,29 +87,29 @@ const updatePokemon = (req, res) => {
     res
       .status(500)
       .json(
-        response.error || "An error has occurred while updating the pokemon."
+        response.error || "Some error occurred while updating the contact."
       );
   }
 };
 
-const deletePokemon = (req, res) => {
-  if (!ObjectId.isValid(req.params.id)) {
-    res.status(400).json('Must use a valid Pokemon id to delete Pokemon.')
-  }
+const deletePokemon = async (req, res) => {
+  // if (!ObjectId.isValid(req.params.id)) {
+  //   res.status(400).json("Must use a valid Pokemon id to delete Pokemon.");
+  // }
   const userId = new ObjectId(req.params.id);
-  const response = mongodb
+  const response = await mongodb
     .getDb()
     .db("poke-data")
     .collection("pokemon")
     .deleteOne({ _id: userId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
-    res.status(200).send();
+    res.status(204).send();
   } else {
     res
       .status(500)
       .json(
-        response.error || "An error has occurred while deleting the pokemon."
+        response.error || "Some error occurred while deleting the contact."
       );
   }
 };
