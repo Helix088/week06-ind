@@ -7,10 +7,10 @@ GET http://localhost:8080/poke-data/63ba2c1898a0c4386448e05f
 
 // PRODUCTION Deploy 
 ### 
-GET https://pokemon-419y.onrender.com/poke-data HTTP/1.1 content-type: application/json
+GET https://week06.onrender.com/poke-data HTTP/1.1 content-type: application/json
 
 ### 
-GET https://pokemon-419y.onrender.com/poke-data/63ba2c1898a0c4386448e05e HTTP/1.1 content-type: application/json
+GET https://week06.onrender.com/poke-data/63ba2c1898a0c4386448e05e HTTP/1.1 content-type: application/json
 
 ###
 POST http://localhost:8080/poke-data HTTP/1.1 content-type: application/json
@@ -27,7 +27,7 @@ content-type: application/json
 }
 
 ###
-POST https://pokemon-419y.onrender.com/poke-data HTTP/1.1 content-type: application/json
+POST https://week06.onrender.com/poke-data HTTP/1.1 content-type: application/json
 content-type: application/json
 
 {
@@ -55,7 +55,7 @@ content-type: application/json
 }
 
 ###
-PUT https://pokemon-419y.onrender.com/poke-data/63ba2c1898a0c4386448e05d HTTP/1.1 content-type: application/json
+PUT https://week06.onrender.com/poke-data/63ba2c1898a0c4386448e05d HTTP/1.1 content-type: application/json
 content-type: application/json
 
 {
@@ -72,4 +72,4 @@ content-type: application/json
  DELETE http://localhost:8080/poke-data/63c8cdee7dd09b95331edd2f HTTP/1.1 content-type: application/json
 
 ###
- DELETE https://pokemon-419y.onrender.com/poke-data/63c8cdfff96116928e8a74ed HTTP/1.1 content-type: application/json
+ DELETE https://week06.onrender.com/poke-data/63c8cdfff96116928e8a74ed HTTP/1.1 content-type: application/json
