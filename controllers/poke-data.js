@@ -13,9 +13,9 @@ const getPokeData = async (req, res) => {
 };
 
 const getPokemon = async (req, res) => {
-  // if (!ObjectId.isValid(req.params.id)) {
-  //   res.status(400).json('Must use a valid Pokemon id to find Pokemon.')
-  // }
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid Pokemon id to find Pokemon.')
+  }
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
@@ -59,9 +59,9 @@ const createPokemon = async (req, res) => {
 };
 
 const updatePokemon = async (req, res) => {
-  // if (!ObjectId.isValid(req.params.id)) {
-  //   res.status(400).json('Must use a valid Pokemon id to update Pokemon.')
-  // }
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid Pokemon id to update Pokemon.')
+  }
   const userId = new ObjectId(req.params.id);
   const pokemon = {
     name: req.body.name,
@@ -90,9 +90,9 @@ const updatePokemon = async (req, res) => {
 };
 
 const deletePokemon = async (req, res) => {
-  // if (!ObjectId.isValid(req.params.id)) {
-  //   res.status(400).json('Must use a valid Pokemon id to delete Pokemon.')
-  // }
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid Pokemon id to delete Pokemon.')
+  }
   const userId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()

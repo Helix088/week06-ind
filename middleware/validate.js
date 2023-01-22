@@ -11,7 +11,7 @@ const savePokemon = async (req, res, next) => {
     weight: "required|string",
   };
 
-  await validator(req.body, validationRule, {}, (err, status) => {
+  validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
       res.status(412).send({
         success: false,
