@@ -1,8 +1,8 @@
 const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
-const getPokeData = (req, res) => {
-  mongodb
+const getPokeData = async (req, res) => {
+  const result = await mongodb
     .getDb()
     .db("poke-data")
     .collection("pokemon")
@@ -16,21 +16,20 @@ const getPokeData = (req, res) => {
     });
 };
 
-const getPokemon = (req, res) => {
+const getPokemon = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Must use a valid Pokemon id to find Pokemon.')
   }
   const userId = new ObjectId(req.params.id);
-  mongodb
+  const result = await mongodb
     .getDb()
     .db("poke-data")
     .collection("pokemon")
-    .find({ _id: userId })
-    .toArray((err, result) => {
+    .find({ _id: userId }).toArray((err, result) => {
       if (err) {
         res.status(400).json({ message: err });
       }
-      res.setHeader("Content-Type", "application/json");
+      res.setHeader('Content-Type', 'application/json');
       res.status(200).json(result[0]);
     });
 };
