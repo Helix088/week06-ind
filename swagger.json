@@ -5,7 +5,7 @@
     "description": "Contact API",
     "version": "1.0.0"
   },
-  "host": "pokemon-419y.onrender.com",
+  "host": "week06.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
