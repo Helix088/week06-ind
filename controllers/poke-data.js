@@ -9,7 +9,7 @@ const getPokeData = (req, res) => {
     .find()
     .toArray((err, lists) => {
       if (err) {
-        return res.status(400).json({ message: err });
+        res.status(400).json({ message: err });
       }
       res.setHeader("Content-Type", "application/json");
       res.status(200).json(lists);
@@ -28,7 +28,7 @@ const getPokemon = (req, res) => {
     .find({ _id: userId })
     .toArray((err, result) => {
       if (err) {
-        return res.status(400).json({ message: err });
+        res.status(400).json({ message: err });
       }
       res.setHeader("Content-Type", "application/json");
       res.status(200).json(result[0]);
@@ -51,7 +51,7 @@ const createPokemon = async (req, res) => {
     .collection("pokemon")
     .insertOne(pokemon);
   if (response.acknowledged) {
-    return res.status(201).json(response);
+    res.status(201).json(response);
   } else {
     res
       .status(500)
@@ -82,7 +82,7 @@ const updatePokemon = async (req, res) => {
     .replaceOne({ _id: userId }, pokemon);
   console.log(response);
   if (response.modifiedCount > 0) {
-    return res.status(204).send();
+    res.status(204).send();
   } else {
     res
       .status(500)
@@ -104,7 +104,7 @@ const deletePokemon = async (req, res) => {
     .deleteOne({ _id: userId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
-    return res.status(200).send();
+    res.status(200).send();
   } else {
     res
       .status(500)
