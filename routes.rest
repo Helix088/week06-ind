@@ -72,4 +72,4 @@ content-type: application/json
  DELETE http://localhost:8080/poke-data/63c8cdee7dd09b95331edd2f HTTP/1.1 content-type: application/json
 
 ###
- DELETE https://week06.onrender.com/poke-data/63c8cdfff96116928e8a74ed HTTP/1.1 content-type: application/json
+ DELETE https://week06.onrender.com/poke-data/63ccd345f85fdda9a1dc01f3 HTTP/1.1 content-type: application/json
