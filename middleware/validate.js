@@ -2,7 +2,6 @@ const validator = require("../helpers/validate");
 
 const savePokemon = async (req, res, next) => {
   const validationRule = {
-    id: "required|string",
     name: "required|string",
     number: "required|integer",
     type: "required|string|array",
