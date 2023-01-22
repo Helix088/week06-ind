@@ -2,8 +2,7 @@ const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
 const getPokeData = async (req, res) => {
-  const result = await mongodb.getDb().db("poke-data").collection("pokemon").find();
-  result.toArray((err, lists) => {
+  const result = await mongodb.getDb().db("poke-data").collection("pokemon").find().toArray((err, lists) => {
     if (err) {
       res.status(400).json({ message: err });
     }
@@ -22,8 +21,7 @@ const getPokemon = async (req, res) => {
     .getDb()
     .db("poke-data")
     .collection("pokemon")
-    .find({ _id: userId });
-    result.toArray((err, lists) => {
+    .find({ _id: userId }).toArray((err, lists) => {
       if (err) {
         res.status(400).json({ message: err });
       }
