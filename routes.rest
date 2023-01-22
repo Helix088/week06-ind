@@ -36,7 +36,7 @@ content-type: application/json
     "type":["Water"],
     "image":"https://img.pokemondb.net/artwork/vector/large/wartortle.png",
     "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png",
-    "height":"1.0 m (3ft 03in)",
+    "height":"1.0 m (3′03″)",
     "weight":"22.5 kg (49.6 lbs)"
 }
 
