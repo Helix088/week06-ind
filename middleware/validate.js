@@ -4,7 +4,7 @@ const savePokemon = async (req, res, next) => {
   const validationRule = {
     name: "required|string",
     number: "required|number",
-    type: "required|string|",
+    type: "required|string",
     image: "required|string",
     shiny: "required|string",
     height: "required|string",
