@@ -52,13 +52,14 @@ const createPokemon = async (req, res) => {
     .insertOne(pokemon);
   if (response.acknowledged) {
     res.status(201).json(response);
-  } else {
-    res
-      .status(500)
-      .json(
-        response.error || "An error has occurred while creating the pokemon."
-      );
-  }
+  } 
+  // else {
+  //   res
+  //     .status(500)
+  //     .json(
+  //       response.error || "An error has occurred while creating the pokemon."
+  //     );
+  // }
 };
 
 const updatePokemon = async (req, res) => {
@@ -83,13 +84,14 @@ const updatePokemon = async (req, res) => {
   console.log(response);
   if (response.modifiedCount > 0) {
     res.status(204).send();
-  } else {
-    res
-      .status(500)
-      .json(
-        response.error || "An error has occurred while updating the pokemon."
-      );
-  }
+  } 
+  // else {
+  //   res
+  //     .status(500)
+  //     .json(
+  //       response.error || "An error has occurred while updating the pokemon."
+  //     );
+  // }
 };
 
 const deletePokemon = async (req, res) => {
