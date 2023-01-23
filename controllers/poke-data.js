@@ -17,9 +17,9 @@ const getPokeData = (req, res) => {
 };
 
 const getPokemon = (req, res) => {
-  // if (!ObjectId.isValid(req.params.id)) {
-  //   res.status(400).json("Must use a valid Pokemon id to find Pokemon.");
-  // }
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json("Must use a valid Pokemon id to find Pokemon.");
+  }
   const userId = new ObjectId(req.params.id);
   mongodb
     .getDb()
@@ -56,15 +56,15 @@ const createPokemon = async (req, res) => {
     res
       .status(500)
       .json(
-        response.error || "Some error occurred while creating the contact."
+        response.error || "Some error occurred while creating the Pokemon."
       );
   }
 };
 
 const updatePokemon = async (req, res) => {
-  // if (!ObjectId.isValid(req.params.id)) {
-  //   res.status(400).json("Must use a valid Pokemon id to update Pokemon.");
-  // }
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json("Must use a valid Pokemon id to update Pokemon.");
+  }
   const userId = new ObjectId(req.params.id);
   const pokemon = {
     name: req.body.name,
@@ -87,15 +87,15 @@ const updatePokemon = async (req, res) => {
     res
       .status(500)
       .json(
-        response.error || "Some error occurred while updating the contact."
+        response.error || "Some error occurred while updating the Pokemon"
       );
   }
 };
 
 const deletePokemon = async (req, res) => {
-  // if (!ObjectId.isValid(req.params.id)) {
-  //   res.status(400).json("Must use a valid Pokemon id to delete Pokemon.");
-  // }
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json("Must use a valid Pokemon id to delete Pokemon.");
+  }
   const userId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()
@@ -109,7 +109,7 @@ const deletePokemon = async (req, res) => {
     res
       .status(500)
       .json(
-        response.error || "Some error occurred while deleting the contact."
+        response.error || "Some error occurred while deleting the Pokemon."
       );
   }
 };
