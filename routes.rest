@@ -32,7 +32,7 @@ content-type: application/json
 
 {
     "name":"Wartortle",
-    "number":"8",
+    "number":8,
     "type":["Water"],
     "image":"https://img.pokemondb.net/artwork/vector/large/wartortle.png",
     "shiny":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png",
